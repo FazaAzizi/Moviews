@@ -1,6 +1,8 @@
 # Moviews
 Moview Project using Movie API
 
+using carthage
+
 This project using Alamofire, Swifty JSON, and Kingfisher.
 Feature = 
 1. Show genre
