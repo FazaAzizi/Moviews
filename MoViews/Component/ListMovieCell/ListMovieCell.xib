@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="KGk-i7-Jjw" customClass="ListMovieCell" customModule="MoViews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="554" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="554" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgY-Mi-gip">
+                        <rect key="frame" x="20" y="10" width="514" height="260"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xiA-u2-x18">
+                                <rect key="frame" x="0.0" y="0.0" width="514" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="pEh-P8-dzu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label knfksnkf dfdkmfkdmf dkmfdkmfd dmfkdmfkdmfd kfmdfkmdkfmdmkfdkf dmfkdmfkd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phO-MR-omp">
+                                <rect key="frame" x="0.0" y="210" width="514" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="phO-MR-omp" secondAttribute="trailing" id="P5d-SW-5Fa"/>
+                            <constraint firstItem="xiA-u2-x18" firstAttribute="leading" secondItem="PgY-Mi-gip" secondAttribute="leading" id="ZeD-Ru-jIf"/>
+                            <constraint firstAttribute="bottom" secondItem="phO-MR-omp" secondAttribute="bottom" id="fjf-tn-nsG"/>
+                            <constraint firstItem="phO-MR-omp" firstAttribute="leading" secondItem="PgY-Mi-gip" secondAttribute="leading" id="ozU-cH-2e8"/>
+                            <constraint firstItem="xiA-u2-x18" firstAttribute="top" secondItem="PgY-Mi-gip" secondAttribute="top" id="tjQ-d0-emZ"/>
+                            <constraint firstItem="phO-MR-omp" firstAttribute="top" secondItem="xiA-u2-x18" secondAttribute="bottom" constant="10" id="uhA-te-xXG"/>
+                            <constraint firstAttribute="trailing" secondItem="xiA-u2-x18" secondAttribute="trailing" id="z5W-T8-8CY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PgY-Mi-gip" secondAttribute="trailing" constant="20" id="28O-y2-Rxz"/>
+                    <constraint firstItem="PgY-Mi-gip" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="O3y-wS-QjF"/>
+                    <constraint firstAttribute="bottom" secondItem="PgY-Mi-gip" secondAttribute="bottom" constant="10" id="VI2-YE-RST"/>
+                    <constraint firstItem="PgY-Mi-gip" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rLo-ZV-czn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageView" destination="xiA-u2-x18" id="9HR-IT-0FF"/>
+                <outlet property="posterImg" destination="xiA-u2-x18" id="lzI-oX-eTM"/>
+                <outlet property="titleLbl" destination="phO-MR-omp" id="fKh-Sh-a31"/>
+            </connections>
+            <point key="canvasLocation" x="175.36231884057972" y="183.81696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
